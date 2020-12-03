@@ -13,6 +13,13 @@ body {
     font-family: Montserrat, sans-serif;
     background-color: #5CC5B1;
 }
+@media (max-height: 1024px) {
+    body {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 
 .container {
     height: 824px;
