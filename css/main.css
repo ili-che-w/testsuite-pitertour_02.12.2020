@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    /* height: 824px; */
+    height: 824px;
     width: 1253px;
     border-radius: 43px;
     background: linear-gradient(360deg, #6ED4FF 1.75%, #8FFFA3 95.51%);
