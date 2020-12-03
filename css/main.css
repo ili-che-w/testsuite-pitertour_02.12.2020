@@ -168,7 +168,7 @@ input[type=password]:disabled + label {
     transition: all 0.2s ease-in;
 }
 
-.form__label--floated {
+.form__input + .form__label--floated {
     font-size: 10px;
     transform: translateY(-100%);
 }
