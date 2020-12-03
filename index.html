@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <main class="main">
+        <h1 class="section__header section__header--main">Welcome Page</h1>
+        <p class="main__lead">Sign in to continue access pages</p>
+      </main>
+      <div class="aside-wrapper">
+        <aside class="aside">
+          <h2 class="section__header section__header--aside">Sign In</h2>
+          <p class="aside__lead">Sign in to continue access pages</p>
+          <form action="#" class="form">
+            <div class="form__container">
+              <input type="email" name="email" id="email" autocomplete="off" required class="form__control form__input">
+              <label for="email">Email address</label>
+            </div>
+            <div class="form__container">
+              <input type="password" name="password" id="password" class="form__control form__input" disabled>
+              <label for="password">Password</label>
+              <span class="form__error-box">
+                Password field is disabled because email you entered is not valid
+              </span>
+            </div>
+            <div class="form__container form__container--mt31">
+              <button type="submit" class="form__btn form__btn--continue form__control">Continue</button>
+            </div>
+            <p class="form__small-print">or connect with social media</p>
+            <div class="form__container">
+              <a href="#" class="form__btn form__btn--twitter form__control">Sign in with Twitter</a>
+            </div>
+            <div class="form__container">
+              <a href="#" class="form__btn form__btn--facebook form__control">Sign in with Facebook</a>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
