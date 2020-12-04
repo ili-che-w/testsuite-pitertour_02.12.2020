@@ -1,4 +1,4 @@
-/* Inputs Animation and Validation */
+/* Inputs animation and validation */
 const inputEmail = document.getElementById('email'),
     inputPassword = document.getElementById('password'),
     emailIsValid = (email) => /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
@@ -33,5 +33,14 @@ inputPassword.parentElement.addEventListener('click', e => {
         setTimeout(() => {
             passwordErrorBox.classList.remove('form__error-box--show')
         }, 2000)
+    }
+})
+
+/* Form submit control */
+const btnSubmit = document.querySelector('[type=submit]')
+btnSubmit.addEventListener('click', e => {
+    e.preventDefault()
+    if (inputEmail.value && inputPassword.value && emailIsValid(inputEmail.value)) {
+        document.querySelector('.form').submit()
     }
 })
